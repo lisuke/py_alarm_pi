@@ -4,6 +4,12 @@ hardware: ssd1306(128 \* 32), fan...
 ## python libs
 -   smbus2
 -   luma.oled
+-   psutil
+
+## setup
+```
+pip install -r requirements.txt
+```
 
 ## run
 ```

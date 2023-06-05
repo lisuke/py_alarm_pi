@@ -5,25 +5,13 @@
 import os
 import sys
 import time
-import logging
-
+import psutil
 from PIL import ImageFont
 from datetime import datetime
 from luma.core.interface.serial import i2c
 from luma.core.render import canvas
 from luma.oled.device import ssd1306
 
-try:
-    import psutil
-except ImportError:
-    print("The psutil library was not found. Run 'sudo -H pip install psutil' to install it.")
-    sys.exit()
-
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='%(asctime)-15s - %(message)s'
-)
-logging.getLogger("PIL").setLevel(logging.ERROR)
 
 
 class Fan(object):

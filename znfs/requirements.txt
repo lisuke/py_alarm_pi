@@ -1,0 +1,3 @@
+psutil
+smbus2
+luma.oled

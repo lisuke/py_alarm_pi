@@ -1,0 +1,17 @@
+[Unit]
+
+Description=znfs
+
+[Service]
+
+Type=simple
+
+RemainAfterExit=yes
+
+ExecStart=/usr/bin/python /opt/znfs.py
+
+PrivateTmp=true
+
+[Install]
+
+WantedBy=multi-user.target
