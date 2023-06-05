@@ -5,8 +5,12 @@ hardware: ssd1306(128 \* 32), fan...
 -   smbus2
 -   luma.oled
 
-## OS info
+## run
+```
+sudo python znfs.py
+```
 
+## OS info
 ```bash
 > neofetch
                    -`                    alarm@alarm
